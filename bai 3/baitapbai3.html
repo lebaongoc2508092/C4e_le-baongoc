@@ -27,18 +27,15 @@
 // bai tập 4
 
 // bài tập 5
-var numbers = (prompt("nhap vao mot day so"))
-console.log(numbers)
-
-
-var sum = numbers.reduce(function (total, number) {
-    return total + number;
-}, 0);
+// var numbers = new Array(prompt("nhap day so"))
+// var sum = numbers.reduce(function (total, number) {
+//     return total + number;
+// }, );
  
-console.log(sum);
+// console.log(sum);
 
-// bai 6 ok
-// let number = [parseInt(prompt("nhap vao mot day so"))]
+// bai 6 
+// let number = new Array(prompt("nhap vao mot day so"))
 // alert(myArrayMin(number))
 // function myArrayMin(arr) {
 //   return Math.min.apply(null, arr);
@@ -73,8 +70,21 @@ console.log(sum);
 // var arr =Array.from([5,7,8,90,24,75,50], function(item, index, arr){
 //     return item + (50*4);
 // });
-// console.log(arr)
 
+// console.log(arr)
+// // // bai 8.6
+var arr =Array.from([5,7,8,90,24,75,50], function(item, index, arr){
+    return item + (50*4);
+});
+console.log(arr)
+var a = arr
+console.log(a)
+var sum = arr.reduce(function (total, arr) {
+    return total + arr;
+}, 0);
+console.log(sum)
+var monney = sum * 2
+console.log(monney+"$")
     </script>
 </body>
 </html>
