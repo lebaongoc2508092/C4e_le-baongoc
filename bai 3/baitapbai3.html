@@ -27,29 +27,42 @@
 // bai tập 4
 
 // bài tập 5
-// var numbers = new Array(prompt("nhap day so"))
-// var sum = numbers.reduce(function (total, number) {
+// const number = []
+// number[0] = parseInt(prompt("nhap vao"))
+// number[1] = parseInt(prompt("nhap vao"))
+// number[2] = parseInt(prompt("nhap vao"))
+// number[3] = parseInt(prompt("nhap vao"))
+// number[4] = parseInt(prompt("nhap vao"))
+// var sum = number.reduce(function (total, number) {
 //     return total + number;
 // }, );
  
 // console.log(sum);
 
+
 // bai 6 
-// let number = new Array(prompt("nhap vao mot day so"))
-// alert(myArrayMin(number))
+// const arr = []
+// arr[0] = parseInt(prompt(" nhap vao mot so"))
+// arr[1] = parseInt(prompt(" nhap vao mot so"))
+// arr[2] = parseInt(prompt(" nhap vao mot so"))
+// arr[3] = parseInt(prompt(" nhap vao mot so"))
+// arr[4] = parseInt(prompt(" nhap vao mot so"))
+// alert(myArrayMin(arr))
 // function myArrayMin(arr) {
 //   return Math.min.apply(null, arr);
 // }
 
 //bai 7
-    // const arr = [3,5,8,55,44,-88,-37]   
-    // let a = parseInt(prompt("nhap vao mot so"))
-    // if(a==arr){
-    //     alert("a  thuoc day so")
-    // }
-    // else{
-    //     alert("a k nam trong day so ")
-    // }
+    const arr = [3,5,8,55,44,-88,-37]   
+   var number = prompt("nhap vao mot so")
+   for(i=0; i<=arr.length; i++)
+   if((arr[i]) == number){
+       alert("duoc tim thay trong chuoi")
+   }
+   else{
+       alert("khong thuoc chuoi ")
+   }
+
 // bai 8.1
 // const arr = [5,7,300,90,24,75,50]
 // console.log(arr)
@@ -72,19 +85,19 @@
 // });
 
 // console.log(arr)
-// // // bai 8.6
-var arr =Array.from([5,7,8,90,24,75,50], function(item, index, arr){
-    return item + (50*4);
-});
-console.log(arr)
-var a = arr
-console.log(a)
-var sum = arr.reduce(function (total, arr) {
-    return total + arr;
-}, 0);
-console.log(sum)
-var monney = sum * 2
-console.log(monney+"$")
+// // // // bai 8.6
+// var arr =Array.from([5,7,8,90,24,75,50], function(item, index, arr){
+//     return item + (50*4);
+// });
+// console.log(arr)
+// var a = arr
+// console.log(a)
+// var sum = arr.reduce(function (total, arr) {
+//     return total + arr;
+// }, 0);
+// console.log(sum)
+// var monney = sum * 2
+// console.log(monney+"$")
     </script>
 </body>
 </html>
