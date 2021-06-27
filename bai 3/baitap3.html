@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // bai tập 1 
+    let a = 5, b = 6;
+        [a, b] = [b, a];
+        console.log(`${a} ${b}`);
+    var a = 1, b = 2;
+[a, b] = [b, a];
+
+console.log('a:', a, 'b:', b); 
+bai tập 2 
+var str = " Hello, beauty, there"
+let arr = str.split(",")
+console.log(arr)
+
+//bai tập 3 
+const number = [1,2,5,7,8,-9]
+    console.log(number)
+// bai tập 4
+let items = ['Jean','T-shift','Socks'];
+let shop = prompt("Hi there , welcome to shop admin panel , what do you want (c,r,u,d)?");
+switch(shop){
+    case 'r' :
+        let new_r = items.length;
+        for(i=0; i<new_r; i++){
+            console.log(i+1 +','+items[i]);
+        }
+        alert("Done!");
+        break;
+    case 'c':
+        let new_items = prompt(" enter the name of the new item");
+        items.push(new_items);
+        let new_c =items.length;
+        for(i=0; i<new_c;i++){
+            console.log(i+1+','+items[i])
+        }
+        alert("Done!")
+        break;
+    case 'u':
+    let position =parseInt(prompt(" enter the position you want to update"));
+    let new_items_u = prompt(" enter the name of the new item");
+        items.splice(position-1,0,new_items_u)
+        let new_u = items.length
+        for(i=0; i<new_u;i++){
+            console.log(i+1+','+items[i])
+        }
+        alert("Done!")
+        break;
+        case 'd':
+    let position_d = parseInt(prompt(" enter the position you want to delete"));
+    items.splice(position_d,1)
+    alert("Done!")
+    let new_d = items.length;
+    for(i=0;i<new_d;i++){
+        console.log(i+1,','+items[i])
+    }
+        alert("Done!")
+        break;
+    default:
+        alert("This command is not support")
+
+
+}
+
+//bài tập 5
+const number = []
+number[0] = parseInt(prompt("nhap vao"))
+number[1] = parseInt(prompt("nhap vao"))
+number[2] = parseInt(prompt("nhap vao"))
+number[3] = parseInt(prompt("nhap vao"))
+number[4] = parseInt(prompt("nhap vao"))
+var sum = number.reduce(function (total, number) {
+    return total + number;
+}, );
+ 
+console.log(sum);
+
+
+//bai 6 
+const arr = []
+arr[0] = parseInt(prompt(" nhap vao mot so"))
+arr[1] = parseInt(prompt(" nhap vao mot so"))
+arr[2] = parseInt(prompt(" nhap vao mot so"))
+arr[3] = parseInt(prompt(" nhap vao mot so"))
+arr[4] = parseInt(prompt(" nhap vao mot so"))
+alert(myArrayMin(arr))
+function myArrayMin(arr) {
+  return Math.min.apply(null, arr);
+}
+
+//bai 7
+    const arr = [3,5,8,55,44,-88,-37]   
+   var number = parseInt(prompt("nhap vao mot so"))
+   var n = arr.includes(number)
+   if(n==true){
+       alert("duoc tim thay trong chuoi")
+   }
+   else{
+       alert("khong tim thay")
+   }
+
+//bai 8.1
+const arr = [5,7,300,90,24,75,50]
+console.log(arr)
+//bai 8.2
+const arr = [5,7,300,90,24,75,50]
+let x = arr[2]
+console.log(x)
+//bai 8.3
+const arr = [5,7,300,90,24,75,50]
+arr[2] = 8;
+console.log(arr)
+//bai 8.4
+var arr =Array.from([5,7,8,90,24,75,50], function(item, index, arr){
+    return item + 50;
+});
+console.log(arr)
+//bai 8.5 sau 4 thang
+var arr =Array.from([5,7,8,90,24,75,50], function(item, index, arr){
+    return item + (50*4);
+});
+
+console.log(arr)
+// bai 8.6
+var arr =Array.from([5,7,8,90,24,75,50], function(item, index, arr){
+    return item + (50*4);
+});
+console.log(arr)
+var a = arr
+console.log(a)
+var sum = arr.reduce(function (total, arr) {
+    return total + arr;
+}, 0);
+console.log(sum)
+var monney = sum * 2
+console.log(monney+"$")
+
+//bai 10
+let name=prompt('Nhap mot day ten:')
+let nameArr=name.split(',');
+let lenName=nameArr.length;
+for (let i=0; i<lenName; i++){
+    nameArr[i]='<'+nameArr[i]+'>';
+}
+alert(nameArr);
+
+
+
+
+//bai 11
+let number = prompt("nhap mot day so");
+let numberArr = number.split(',');
+let lenNumber = numberArr.length;
+let odd = []    
+for(let i =0; i<lenNumber; i++){
+    if(numberArr[i]%2!=0){
+        odd.push(numberArr[i]);
+    }
+}
+alert(odd);
+   
+    </script>
+</body>
+</html>
