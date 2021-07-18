@@ -32,7 +32,8 @@ div.menu{
     margin: 30px 0;
 }
 input{
-    padding: 5px 50px;
+    width: 15%;
+    padding: 7px;
 }
 div.conten{
     display: flex;

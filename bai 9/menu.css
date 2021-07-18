@@ -1,0 +1,17 @@
+.menu{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: blue;
+    color: white;
+   
+    
+   
+}
+.menu li{
+    display: inline-block;
+    padding: 20px 0;
+  width: 150px;
+ 
+}
