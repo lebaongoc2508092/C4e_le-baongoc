@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        .control {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="control">
+        <input type="text" placeholder="Tên" />
+        <input type="number" placeholder="Tuổi" />
+        <input type="text" placeholder="Lớp" />
+
+        <button id="btn-add">Add</button>
+        <button id="btn-edit">Cập nhật</button>
+
+        <input type="text" placeholder="Nhập vào tên " id="search" />
+        <button id="btn-search">Tìm kiếm</button>
+
+
+    </div>
+
+    <div>
+        <table id="list-student">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên</th>
+                    <th>Tuổi</th>
+                    <th>Lớp</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+
+            </tbody>
+
+        </table>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
