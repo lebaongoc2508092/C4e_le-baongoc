@@ -7,6 +7,7 @@
     <title>The band</title>
     <link rel="shortcut icon" type="image/png" href="https://lh3.googleusercontent.com/proxy/IYJM_42n-ZsazecXpMvdYWP0I3sXUrTWfqsMGWwO8Ve8CwZ2WfqMnyxNmn5EY-ulwOR1YhBQe3J2JZ_GWKJp725w8uoYIhmtkgjS3fH7SIT9y7ikf3r6I0ISlDeCjJY5DTwiv89kmUMLdFQF-yZ1Xd25EHoPndriKIKbZ_r5AAcPWPy1dK5-AI_URXj3eysAzTZsNUfMVPNyPrneBFFtNez8y_GtN4h0V1Hh1Gb_E6aydmr5ydN4ieZuQJRQbWg3oQ"/>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="./assets/font/themify-icons/themify-icons.css">
 </head>
 <body>
@@ -19,7 +20,7 @@
                <li><a href="#tour">Tour</a></li>
                <li><a href="#contact">Contact</a></li>
                <li>
-                   <a href="">
+                   <a href="#">
                        More
                        <i class =" nav-arrow-down ti-arrow-circle-down" ></i>
 
@@ -37,7 +38,9 @@
      <div class="search-btn">
          <i class="search-icon ti-search"></i>
      </div>      
-
+     <div id="mobile-menu" class="mobile-menu-btn">
+         <i class="menu-icon ti-menu"></i>
+     </div>
            <!-- End : Search button  -->
        </div>
        
@@ -54,15 +57,15 @@
             <p class="section-sub-heding">We love music</p>
             <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             <div class="row members-list">
-                <div class="col col-third text-center">
+                <div class=" col col-third s-col-full mt-32 text-center">
                     <p class="member-name">Name</p>
                     <img src="https://www.w3schools.com/w3images/bandmember.jpg"alt="name"class="member-img">
                 </div>
-                <div class="col col-third text-center">
+                <div class=" col col-third s-col-full mt-32 text-center">
                     <p class="member-name">Name</p>
                     <img src="https://www.w3schools.com/w3images/bandmember.jpg"alt="name"class="member-img">
                 </div>
-                <div class="col col-third text-center">
+                <div class=" col col-third s-col-full mt-32 text-center">
                     <p class="member-name">Name</p>
                     <img src="https://www.w3schools.com/w3images/bandmember.jpg"alt="name" class="member-img">
                 </div>
@@ -82,32 +85,32 @@
                 </ul>
     <!-- Places -->
     <div class="row places-list">
-        <div class="col col-third">
+        <div class="col col-third s-col-full mt-16">
             <img src="https://www.w3schools.com/w3images/newyork.jpg" alt="New York" class="place-img">
             <div class="place-body">
                 <h3 class="place-heading">New York</h3>
                 <p class="place-time">Fri 27 Nov 2016</p>
                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <button class="btn js-buy-ticket">Buy Tichets</button>
+                <button class="btn s-full-width js-buy-ticket">Buy Tichets</button>
             </div>
         </div>
 
-         <div class="col col-third">
+         <div class="col col-third s-col-full mt-16">
                 <img src="https://www.w3schools.com/w3images/paris.jpg" alt="Paris" class="place-img">
                 <div class="place-body">
                     <h3 class="place-heading">Paris</h3>
                     <p class="place-time">Sat 28 Nov 2016</p>
                     <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                    <button class="btn js-buy-ticket">Buy Tichets</button>
+                    <button class="btn s-full-width js-buy-ticket">Buy Tichets</button>
             </div>
         </div>
-        <div class="col col-third">
+        <div class="col col-third s-col-full mt-16">
             <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="San Francisco" class="place-img">
             <div class="place-body">
                 <h3 class="place-heading">San Francisco</h3>
                 <p class="place-time">Sun 29 Nov 2016</p>
                 <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                <button class="btn js-buy-ticket">Buy Tichets</button>
+                <button class="btn s-full-width js-buy-ticket">Buy Tichets</button>
              </div>          
         </div>   
       
@@ -119,18 +122,18 @@
             <h2 class="section-heading">CONTACT</h2>
             <p class="section-sub-heding">Fan? Drop a note!</p>
             <div class="row contact-content">
-                <div class="col col-half contact-info">
+                <div class="col col-half s-col-full contact-info">
                     <p><i class="ti-location-pin"></i>Chicago, US</p>
-                    <p><i class="ti-mobile"></i>Phone: +00 151515</p>
-                    <p><i class="ti-email"></i>Email: mail@mail.com</p>
+                    <p><i class="ti-mobile"></i>Phone:<a href="tel:+00 151515">+00 151515</a></p>
+                    <p><i class="ti-email"></i>Email:<a href="mailto:mail@mail.com">mail@mail.com</a> </p>
                 </div>
-                <div class="col col-half contact-form">
+                <div class="col col-half s-col-full contact-form">
                     <form action="">
                         <div class="row">
-                            <div class="col col-half">
+                            <div class="col col-half s-col-full ">
                                 <input type="text" name="" id=""placeholder="Name" required class="form-control" >
                             </div>
-                            <div class="col col-half">
+                            <div class="col col-half s-col-full s-mt-8 ">
                                 <input type="email" name="" id=""placeholder="Email" required class="form-control" >
                             </div>
 
@@ -140,7 +143,7 @@
                                 <input type="text" name="" id=""placeholder="Message" required class="form-control" >
                             </div>
                         </div>
-                        <input class="btn full-ringt mt-16" type="submit" value="SEND">
+                        <input class=" contact-submit-btn btn full-ringt mt-16 s-full-width" type="submit" value="SEND">
                     </form>
 
                 </div>
